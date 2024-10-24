@@ -1,17 +1,19 @@
 #include <stdio.h>
-double inverse(double x) {
-        if(x!=0) {
-                return 1/x;
-        } else {
-                return 0;
-        }
+double square(double x) {
+        return x*x;
+}
+double cube(double x) {
+        return x*x*x;
 }
 
 int main () {
-        double x,i;
-        printf("Enter a number:");
+        double x;
+        double s,c;
+        printf("Enter a number");
         scanf("%lf",&x);
-        i=inverse(x);
-        printf("Inverse of %lf is %lf",x,i);
+        s=square(x);
+        c=cube(x);
+        printf("square and cube of %lf are %lf and %lf",x,s,c);
         return 0;
 }
+
